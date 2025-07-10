@@ -3,12 +3,8 @@ import {
   Mail,
   Phone,
   MapPin,
-  Clock,
   Send,
   MessageCircle,
-  Facebook,
-  Instagram,
-  Twitter,
 } from 'lucide-react';
 
 const Contact = () => {
@@ -104,68 +100,10 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className='flex items-start space-x-4'>
-                  <div className='w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0'>
-                    <Clock className='h-6 w-6 text-blue-600' />
-                  </div>
-                  <div>
-                    <h3 className='font-semibold text-gray-900 mb-1'>
-                      Horaires d'ouverture
-                    </h3>
-                    <div className='text-gray-600 space-y-1'>
-                      <p className='flex justify-between'>
-                        <span>Lun - Jeu:</span>
-                        <span>08h00 - 18h00</span>
-                      </p>
-                      <p className='flex justify-between'>
-                        <span>Vendredi:</span>
-                        <span>08h00 - 18h00</span>
-                      </p>
-                      <p className='flex justify-between'>
-                        <span>Samedi:</span>
-                        <span>09h00 - 16h00</span>
-                      </p>
-                      <p className='flex justify-between'>
-                        <span>Dimanche:</span>
-                        <span className='text-red-500'>Fermé</span>
-                      </p>
-                    </div>
-                    <div className='mt-2 p-2 bg-amber-50 rounded-lg'>
-                      <p className='text-sm text-amber-700'>
-                        <Clock className='h-4 w-4 inline mr-1' />
-                        Ferme bientôt à 18h00
-                      </p>
-                    </div>
-                  </div>
-                </div>
+
               </div>
 
-              {/* Réseaux sociaux */}
-              <div className='mt-8 pt-8 border-t border-gray-200'>
-                <h3 className='font-semibold text-gray-900 mb-4'>
-                  Suivez-nous
-                </h3>
-                <div className='flex space-x-4'>
-                  <a
-                    href='#'
-                    className='w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white hover:bg-purple-700 transition-colors'
-                  >
-                    <Facebook className='h-5 w-5' />
-                  </a>
-                  <a
-                    href='#'
-                    className='w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white hover:bg-purple-700 transition-colors'
-                  >
-                    <Instagram className='h-5 w-5' />
-                  </a>
-                  <a
-                    href='#'
-                    className='w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white hover:bg-purple-700 transition-colors'
-                  >
-                    <Twitter className='h-5 w-5' />
-                  </a>
-                </div>
-              </div>
+
 
               {/* WhatsApp */}
               <div className='mt-6'>
@@ -325,136 +263,9 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Carte et informations pratiques */}
-        <div className='mt-16'>
-          <div className='bg-white rounded-2xl shadow-lg overflow-hidden'>
-            <div className='grid lg:grid-cols-2'>
-              {/* Carte */}
-              <div className='h-64 lg:h-auto bg-gray-200 flex items-center justify-center'>
-                <div className='text-center text-gray-500'>
-                  <MapPin className='h-12 w-12 mx-auto mb-2' />
-                  <p className='font-semibold'>Carte interactive</p>
-                  <p className='text-sm'>3561 Cotonou, Fidjrossé, Houta</p>
-                  <a
-                    href='https://maps.google.com/?q=3561+Cotonou+Fidjrossé+Houta+Bénin'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='inline-block mt-2 text-purple-600 hover:underline'
-                  >
-                    Voir sur Google Maps
-                  </a>
-                </div>
-              </div>
 
-              {/* Informations pratiques */}
-              <div className='p-8'>
-                <h3 className='text-xl font-bold text-gray-900 mb-6'>
-                  Comment nous trouver
-                </h3>
 
-                <div className='space-y-4'>
-                  <div>
-                    <h4 className='font-semibold text-gray-900 mb-2'>
-                      🚗 En voiture
-                    </h4>
-                    <p className='text-gray-600 text-sm'>
-                      Parking disponible devant notre boutique. Accès facile
-                      depuis la route principale de Fidjrossé.
-                    </p>
-                  </div>
 
-                  <div>
-                    <h4 className='font-semibold text-gray-900 mb-2'>
-                      🏍️ En moto-taxi
-                    </h4>
-                    <p className='text-gray-600 text-sm'>
-                      Demandez "Green Beauty, Houta Fidjrossé" ou appelez-nous
-                      au 69 01 24 48 pour vous guider.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 className='font-semibold text-gray-900 mb-2'>
-                      🚌 En transport en commun
-                    </h4>
-                    <p className='text-gray-600 text-sm'>
-                      Arrêt Fidjrossé, puis 5 minutes à pied vers Houta.
-                    </p>
-                  </div>
-
-                  <div className='mt-6 p-4 bg-green-50 rounded-lg'>
-                    <h4 className='font-semibold text-green-800 mb-2'>
-                      💡 Conseil
-                    </h4>
-                    <p className='text-green-700 text-sm'>
-                      Appelez-nous avant votre visite pour vous assurer de notre
-                      disponibilité et bénéficier de conseils personnalisés !
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* FAQ rapide */}
-        <div className='mt-16'>
-          <div className='bg-white rounded-2xl shadow-lg p-8'>
-            <h2 className='text-2xl font-bold text-gray-900 mb-6 text-center'>
-              Questions Fréquentes
-            </h2>
-
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
-              <div className='p-6 bg-purple-50 rounded-lg'>
-                <h3 className='font-semibold text-gray-900 mb-2'>
-                  Délais de livraison
-                </h3>
-                <p className='text-sm text-gray-600'>
-                  Cotonou: 24-48h
-                  <br />
-                  Autres villes: 3-5 jours ouvrés
-                  <br />
-                  Livraison gratuite dès 15.000 FCFA
-                </p>
-              </div>
-
-              <div className='p-6 bg-green-50 rounded-lg'>
-                <h3 className='font-semibold text-gray-900 mb-2'>
-                  Retours & Échanges
-                </h3>
-                <p className='text-sm text-gray-600'>
-                  Retours gratuits sous 15 jours
-                  <br />
-                  Produits non ouverts uniquement
-                  <br />
-                  Remboursement ou échange
-                </p>
-              </div>
-
-              <div className='p-6 bg-amber-50 rounded-lg'>
-                <h3 className='font-semibold text-gray-900 mb-2'>Paiement</h3>
-                <p className='text-sm text-gray-600'>
-                  MTN Mobile Money
-                  <br />
-                  Moov Money
-                  <br />
-                  Paiement à la livraison
-                  <br />
-                  Espèces en boutique
-                </p>
-              </div>
-            </div>
-
-            <div className='text-center mt-6'>
-              <a
-                href='/faq'
-                className='text-purple-600 hover:text-purple-700 font-semibold'
-              >
-                Voir toutes les FAQ →
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
